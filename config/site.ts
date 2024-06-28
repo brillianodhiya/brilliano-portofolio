@@ -61,10 +61,11 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
+    github: "https://github.com/brillianodhiya",
     twitter: "https://twitter.com/getnextui",
     docs: "https://nextui-docs-v2.vercel.app",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    discord: "https://discordapp.com/users/248357529048842241",
+    sponsor: "mailto:brillidhiya@gmail.com?subject=Hello There",
+    linkedln: "https://www.linkedin.com/in/brilliano-dhiya-ulhaq-44b196194",
   },
 };

@@ -24,6 +24,9 @@ import {
   HeartFilledIcon,
   SearchIcon,
   Logo,
+  Linkedln,
+  LoveLetterEmail,
+  WhatsappIcon,
 } from "@/components/icons";
 
 export const Navbar = () => {
@@ -80,25 +83,27 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
+          <Link isExternal href={siteConfig.links.linkedln}>
+            <Linkedln className="text-default-500 fill-default-500" />
           </Link>
           <Link isExternal href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
+            <WhatsappIcon className="text-default-500" />
           </Link>
           <Link isExternal href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+        {/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
         <NavbarItem className="hidden md:flex">
           <Button
             isExternal
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
             href={siteConfig.links.sponsor}
-            startContent={<HeartFilledIcon className="text-danger" />}
+            startContent={
+              <LoveLetterEmail className="text-danger fill-danger" />
+            }
             variant="flat"
           >
             Hire me
@@ -115,7 +120,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        {searchInput}
+        {/* {searchInput} */}
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
